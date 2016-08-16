@@ -1,0 +1,35 @@
+/*
+Currently appears before semantic so cannot override anything
+*/
+
+body {
+  margin: 1em;
+}
+
+#main {
+  padding: 1em;
+}
+
+#data th:nth-child(1),
+#data td:nth-child(1) {
+  min-width: 200px;
+}
+
+tbody tr td {
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
+tr,
+h4 {
+  font-size: 0.9em !important;
+}
+
+/*
+tbody {
+  display: block;
+  overflow: auto;
+  height: 100px;
+  width: 100%;
+}
+*/
