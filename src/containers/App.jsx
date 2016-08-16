@@ -100,6 +100,10 @@ export default class App extends React.Component {
             <LeaderTable users={ this.state.users } />
           </div>
         </div>
+        <footer className="text-center">
+          Crafted by Jason Boxman. Inspired by <a href="https://codepen.io/FreeCodeCamp/full/eZGMjp/">
+            FreeCodeCamp : Build a Camper Leaderboard</a>. Styled with <a href="http://semantic-ui.com">Semantic UI</a>.
+        </footer>
       </div>
     );
   }

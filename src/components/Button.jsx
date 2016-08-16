@@ -9,7 +9,6 @@ export default class Button extends React.Component {
   }
 
   clickHandler() {
-    console.log(this.props);
     this.props.clickHandler(this.props.index);
   }
 
