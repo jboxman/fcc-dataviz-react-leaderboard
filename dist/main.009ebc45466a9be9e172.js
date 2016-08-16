@@ -12793,6 +12793,24 @@
 	
 	var _ref2 = _react2.default.createElement('div', { className: 'ui loader' });
 	
+	var _ref3 = _react2.default.createElement(
+	  'footer',
+	  { className: 'text-center' },
+	  'Crafted by Jason Boxman. Inspired by ',
+	  _react2.default.createElement(
+	    'a',
+	    { href: 'https://codepen.io/FreeCodeCamp/full/eZGMjp/' },
+	    'FreeCodeCamp : Build a Camper Leaderboard'
+	  ),
+	  '. Styled with ',
+	  _react2.default.createElement(
+	    'a',
+	    { href: 'http://semantic-ui.com' },
+	    'Semantic UI'
+	  ),
+	  '.'
+	);
+	
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 	
@@ -12886,7 +12904,8 @@
 	            ),
 	            _react2.default.createElement(_LeaderTable2.default, { users: this.state.users })
 	          )
-	        )
+	        ),
+	        _ref3
 	      );
 	    }
 	  }]);
@@ -24060,4 +24079,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=main.faf1893d1b033fb30773.js.map
+//# sourceMappingURL=main.009ebc45466a9be9e172.js.map
