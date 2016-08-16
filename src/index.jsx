@@ -8,8 +8,8 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
 require('./favicon.ico'); // Tell webpack to load favicon.ico
+import './styles/semantic.css'
 import './styles/style.scss';
-//import './styles/semantic.css'
 //import { syncHistoryWithStore } from 'react-router-redux';
 import App from './containers/App';
 

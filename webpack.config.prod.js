@@ -12,6 +12,9 @@ const GLOBALS = {
 };
 
 export default {
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   debug: true,
   devtool: 'source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
   noInfo: true, // set to false to see a list of every file being bundled.
@@ -19,7 +22,7 @@ export default {
   target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
   output: {
     path: `${__dirname}/dist`,
-    publicPath: '/',
+    publicPath: './',
     filename: '[name].[chunkhash].js'
   },
   plugins: [
@@ -54,17 +57,17 @@ export default {
       // Note that you can add custom options here if you need to handle other custom logic in index.html
       // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
       trackJSToken: ''
-    }),
+    })//,
 
     // Eliminate duplicate packages when generating bundle
-    new webpack.optimize.DedupePlugin(),
+    //new webpack.optimize.DedupePlugin(),
 
     // Minify JS
-    new webpack.optimize.UglifyJsPlugin()
+    //new webpack.optimize.UglifyJsPlugin()
   ],
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
+      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'},
       {test: /\.eot(\?v=\d+.\d+.\d+)?$/, loader: 'url?name=[name].[ext]'},
       {test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url?limit=10000&mimetype=application/font-woff&name=[name].[ext]"},
       {test: /\.ttf(\?v=\d+.\d+.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream&name=[name].[ext]'},
